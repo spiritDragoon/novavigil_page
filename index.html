@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NoteIQ - Go Paperless</title>
+  <title>NovaVigil - AI-Powered Pharmacovigilance</title>
   <link rel="icon" type="image/x-icon" href="images/Noteiqfavicon.png">
   <style>
     :root{
@@ -20,7 +20,6 @@
       --tab-active-purple: #6b2bb8;
     }
 
-    /* Reset + base */
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
@@ -40,7 +39,6 @@
       padding:48px 20px;
     }
 
-    /* Header */
     header{
       position:static;
       border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -64,18 +62,12 @@
       text-decoration:none;
     }
 
-
     .logo-img{
       height:5rem;
       width:8rem;
       display:block;
       object-fit:contain;
     }
-
-    .left-logo{
-      background-image:url("images/niqwhite.png");
-    }
-
 
     .partner-logo-wrapper{
       background:white;
@@ -84,14 +76,12 @@
       display:inline-block;
     }
 
-    /* Sections */
     section{
       padding:48px 0;
       margin-bottom:12px;
       border-radius:var(--radius);
     }
 
-    /* Form & Features */
     #form-section{
       background: #ffffff;
       box-shadow: 0 6px 24px rgba(0,0,0,0.08);
@@ -171,7 +161,6 @@
     @media (max-width:980px){ .form-wrap{order:2} }
     #fs-form-root{ min-height:320px; }
 
-    /* Trust */
     #trust {
       background: linear-gradient(180deg, var(--primary-600), var(--primary));
       color: var(--white);
@@ -229,7 +218,6 @@
 
     .trust-image-card:focus { outline: 3px solid rgba(26,159,112,0.18); outline-offset: 4px; }
 
-    /* More About (replaces Glimpses) */
     #more-about { background: #ffffff; color:#000; }
     #more-about-heading { text-align:center; margin-bottom:32px; font-size:32px; font-weight:700; }
 
@@ -252,28 +240,22 @@
     }
 
     .module-cta-btn {
-  margin-top: 16px;
-  background: var(--primary);
-  color: #ffffff;
-  padding: 10px 18px;
-  border-radius: 10px;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
-  transition: transform .15s ease, box-shadow .15s ease;
-}
+      margin-top: 16px;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
 
-.module-cta-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
-}
-
-.module-cta-btn:focus {
-  outline: 3px solid rgba(26,159,112,0.25);
-  outline-offset: 3px;
-}
-
+    .module-cta-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+    }
 
     .advantages-title, .modules-title { margin-top:0; font-size:22px; color:#0f2b24; font-weight:700; margin-bottom:18px; }
 
@@ -281,119 +263,70 @@
     .advantages-list li { display:flex; gap:12px; margin-bottom:14px; font-size:1.05rem; color:#2c3b3a; }
     .star { font-size:1.3rem; color:#f7c200; }
 
-    /* TAB BAR — styled to match screenshot */
-    .module-tabs-wrap{
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 18px 6px 10px 6px;
-      margin-bottom: 18px;
-    }
-    .module-tabs-wrap::before{
-      content: "";
-      position: absolute;
-      left: 6px;
-      right: 6px;
-      bottom: 8px;
-      height: 1px;
-      background: rgba(0,0,0,0.08);
-      pointer-events: none;
-    }
-
-    .module-tab{
-      position: relative;
-      background: transparent;
-      border: 0;
-      padding: 10px 18px;
-      border-radius: 10px 10px 0 0;
-      font-weight: 600;
-      color: rgba(0,0,0,0.6);
-      cursor: pointer;
-      transition: color .16s ease, transform .12s ease, box-shadow .12s ease;
-      z-index: 2;
-      line-height: 1;
-      font-size: 0.95rem;
-    }
-    .module-tab:hover, .module-tab:focus{
-      color: rgba(0,0,0,0.85);
-      outline: none;
-      transform: translateY(-2px);
-    }
-
-    .module-tab[aria-selected="true"]{
-      background: #ffffff;
-      color: var(--tab-active-purple);
-      box-shadow: 0 8px 20px rgba(12,20,30,0.08);
-      padding: 12px 20px;
-      border-radius: 8px;
-      border: 1px solid rgba(0,0,0,0.06);
-      transform: translateY(-6px);
-      transition: transform .18s cubic-bezier(.2,.9,.3,1), box-shadow .18s ease;
-      z-index: 6;
-    }
-
-    .tabs-screenshot{
-      margin-left: auto;
-      height:34px;
-      object-fit:contain;
-      border-radius:6px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      border: 1px solid rgba(0,0,0,0.06);
-      opacity:0.95;
-    }
-
     .module-tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 16px;
-}
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
 
-.module-tab {
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  background: #f7f7f7;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all .2s ease;
-}
+    .module-tab {
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #f7f7f7;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all .2s ease;
+    }
 
-.module-tab.active {
-  background: var(--primary);
-  color: white;
-  border-color: var(--primary-600);
-}
+    .module-tab.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary-600);
+    }
 
-.module-panel {
-  display: none;
-  color: #17312c;
-}
+    .module-panel {
+      display: none;
+      color: #17312c;
+    }
 
-.module-panel.active {
-  display: block;
-}
+    .module-panel.active {
+      display: block;
+    }
 
-.module-panel h4 {
-  margin: 0 0 8px 0;
-  color: #0f3b2b;
-}
+    .module-panel h4 {
+      margin: 0 0 8px 0;
+      color: #0f3b2b;
+    }
 
+    /* Stats Section */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 24px;
+    }
+    @media (max-width:768px){
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .stat-card {
+      background: #f0faf6;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #d4ede4;
+    }
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: #2c3b3a;
+    }
 
-    /* Modal (kept intact) */
-    .glimpse-modal{ position:fixed; inset:0; display:none; align-items:center; justify-content:center; z-index:9999; pointer-events:none; }
-    .glimpse-modal[aria-hidden="false"]{ display:flex; pointer-events:auto; }
-    .glimpse-modal-backdrop{ position:absolute; inset:0; background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)); backdrop-filter: blur(3px); }
-    .glimpse-modal-panel{ position:relative; max-width:1100px; width:92%; margin:24px; z-index:2; align-self:center; display:flex; flex-direction:column; gap:14px; pointer-events:auto; }
-    .glimpse-modal-close{ position:absolute; right:-6px; top:-10px; background:var(--white); color:var(--primary); border:0; border-radius:999px; width:42px; height:42px; font-size:24px; line-height:1; box-shadow:0 8px 22px rgba(0,0,0,0.18); cursor:pointer; z-index:5; }
-    .glimpse-modal-content{ background:transparent; border-radius:12px; padding:12px; display:flex; flex-direction:column; align-items:center; gap:12px; }
-    .glimpse-modal-content img{ width:100%; height:auto; max-height:80vh; border-radius:10px; object-fit:contain; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
-    .glimpse-modal-caption{ color:#ffffff; font-size:1rem; text-align:center; max-width:90%; opacity:0.95; }
-
-    @media (max-width:1100px){ .glimpse-grid-large{ grid-template-columns: repeat(2, 1fr); } .glimpse-item img{ height:420px; } }
-    @media (max-width:680px){ .glimpse-grid-large{ grid-template-columns: 1fr; } .glimpse-item img{ height:420px; } .glimpse-modal-panel{ width:96%; } }
-
-    /* Contact & utility */
     #contact{ background: linear-gradient(180deg,var(--primary), var(--accent)); color:var(--white); }
     .contact-inner{ display:flex; justify-content:space-between; align-items:center; gap:20px; }
     @media (max-width:880px){ .contact-inner{flex-direction:column;align-items:flex-start} }
@@ -408,13 +341,12 @@
 
 <body>
 
-  <!-- HEADER -->
- <header aria-label="Main header">
+  <header aria-label="Main header">
     <div class="header-inner">
-      <a href="https://arcolab.com/products/noteiq" class="logo" aria-label="NoteIQ Home">
+      <a href="https://arcolab.com/products/novavigil" class="logo" aria-label="NovaVigil Home">
         <div class="partner-logo-wrapper">
-        <img class="logo-img" src="images/NovaVigil.png" alt="NoteIQ logo">
-           </div>
+          <img class="logo-img" src="images/NovaVigil.png" alt="NovaVigil logo">
+        </div>
       </a>
 
       <a href="https://arcolab.com/" class="logo" aria-label="Partner">
@@ -427,55 +359,54 @@
 
   <main>
 
-    <!-- Form & Features -->
     <section id="form-section" aria-labelledby="form-heading">
       <div class="container">
         <div class="split">
 
           <div class="hero" id="form-left">
             <h1 id="form-heading" class="form-heading">
-              Go paperless with NoteIQ VMS!
+              AI-Powered Literature Monitoring
             </h1>
             <p class="hero-lead">
-             With NoteIQ, every validation activity becomes traceable, audit-ready, and fully digital — without changing the way your teams work today.
+              NovaVigil™ empowers your safety team to process literature cases faster and more accurately — reducing processing time while keeping your experts in control.
             </p>
 
             <div class="features-vertical" aria-hidden="false">
               <div class="feature" tabindex="0">
-                <div class="icon">A</div>
+                <div class="icon">1</div>
                 <div>
-                  <h4>Paperless Record Management</h4>
-                  <p>Replace binders and printouts with digital workflows.</p>
+                  <h4>AI-Powered Literature Search</h4>
+                  <p>Intelligent triage of PubMed, EMBASE, and local databases with semantic understanding.</p>
                 </div>
               </div>
 
               <div class="feature" tabindex="0">
-                <div class="icon">B</div>
+                <div class="icon">2</div>
                 <div>
-                  <h4>Complete End-to-End Traceability</h4>
-                  <p>Track every action with timestamped audit trails automatically.</p>
+                  <h4>NLP-Guided Review</h4>
+                  <p>Contextual analysis of document relationships and clinical significance with AI-generated summaries.</p>
                 </div>
               </div>
 
               <div class="feature" tabindex="0">
-                <div class="icon">C</div>
+                <div class="icon">3</div>
                 <div>
-                  <h4>Built-In Compliance</h4>
-                  <p>Support GxP, 21 CFR Part 11 standards and enforce ALCOA+ compliance effortlessly.</p>
+                  <h4>Automated Data Extraction</h4>
+                  <p>Structured case data extraction with human-in-the-loop validation for accuracy.</p>
                 </div>
               </div>
 
               <div class="feature" tabindex="0">
-                <div class="icon">D</div>
+                <div class="icon">4</div>
                 <div>
-                  <h4>Seamless Digital Transformation</h4>
-                  <p>Adopt digital processes without changing existing workflows significantly.</p>
+                  <h4>Compliance-Ready Reporting</h4>
+                  <p>E2B(R3) compliant case narratives with full audit trail and SME oversight.</p>
                 </div>
               </div>
             </div>
 
-            <p class="cta-text">Ready to see how our digital validation works?</p>
-            <p class="cta-text">Share your details and we’ll walk you through a short, tailored demo.</p>
+            <p class="cta-text">Ready to see how NovaVigil accelerates your literature surveillance?</p>
+            <p class="cta-text">Share your details for a personalized demo.</p>
           </div>
 
           <div class="form-wrap" aria-label="Signup form">
@@ -491,93 +422,86 @@
       </div>
     </section>
 
-    <!-- Trust -->
     <section id="trust" aria-labelledby="trust-heading">
-      <div class="trust-split" role="region" aria-label="Why trust NoteIQ">
+      <div class="trust-split" role="region" aria-label="Why trust NovaVigil">
         <div class="trust-left">
-          <div class="trust-image-card" tabindex="0" role="img" aria-label="NoteIQ platform overview">
-            <img src="images/screenshots/workflow-photo.png" alt="NoteIQ Approach" />
+          <div class="trust-image-card" tabindex="0" role="img" aria-label="NovaVigil platform overview">
+            <img src="images/screenshots/novavigil-dashboard.png" alt="NovaVigil Dashboard" />
           </div>
         </div>
 
         <div class="trust-right">
           <div class="trust-card" aria-labelledby="trust-card-title">
-            <h3 id="trust-card-title">Why organizations trust NoteIQ</h3>
+            <h3 id="trust-card-title">Why pharmaceutical companies trust NovaVigil</h3>
 
             <ul class="trust-list" aria-label="Trust highlights">
-              <li><span class="star">⭐</span><span>Designed by experts with extensive experience in the pharmaceutical industry</span></li>
-              <li><span class="star">⭐</span><span>21 CFR Part 11 and Annexure 11 compliant</span></li>
-              <li><span class="star">⭐</span><span>Certified against <strong>ISO 27001</strong> and <strong>ISO 27701</strong> for information security and privacy</span></li>
+              <li><span class="star">⭐</span><span>Built by PV experts with decades of pharmacovigilance experience</span></li>
+              <li><span class="star">⭐</span><span>Human-in-the-loop validation ensures accuracy & compliance</span></li>
+              <li><span class="star">⭐</span><span>Certified against <strong>ISO 27001</strong> and <strong>ISO 27701</strong> for enterprise security</span></li>
+              <li><span class="star">⭐</span><span>Trusted by <strong>30+ global clients</strong> across 5 continents</span></li>
             </ul>
 
-            <p>We combine domain experience with enterprise-grade security practices to ensure your validation processes are compliant and auditable.</p>
+            <p>NovaVigil enables your safety team to focus on clinical judgment while AI handles repetitive data processing tasks.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- More About NoteIQ (cleaned, two-column, tab-bar restyled) -->
     <section id="more-about" aria-labelledby="more-about-heading">
       <div class="container">
-        <h2 id="more-about-heading">More About NoteIQ</h2>
+        <h2 id="more-about-heading">Why NovaVigil</h2>
 
         <div class="more-about-grid">
-          <!-- LEFT -->
           <div class="advantages-card">
-            <h3 class="advantages-title">NoteIQ Platform Advantages</h3>
+            <h3 class="advantages-title">Measurable Business Impact</h3>
             <ul class="advantages-list">
-              <li><span class="star">⭐</span> Streamlined workflows for rapid validation</li>
-              <li><span class="star">⭐</span> Enterprise Grade Security and Compliance</li>
-              <li><span class="star">⭐</span> Configurable, Scalable and AI-Powered</li>
-              <li><span class="star">⭐</span> Simplified User Experience </li>
+              <li><span class="star">⭐</span> From 3 hours to under 1 hour per case. Meet tight deadlines without the overtime.</li>
+              <li><span class="star">⭐</span> 50% reduction in manual effort while maintaining the necessary >95% accuracy requirement.</li>
+              <li><span class="star">⭐</span> Complete compliance audit readiness with full traceability.</li>
             </ul>
           </div>
 
-          <!-- RIGHT COLUMN: modules reverted to button layout -->
-<div class="modules-card">
-  <h3 class="modules-title">Our Other Modules</h3>
+          <div class="modules-card">
+            <h3 class="modules-title">Key Capabilities</h3>
 
-  <div class="module-tabs">
-    <button class="module-tab active" data-target="dms">DMS</button>
-    <button class="module-tab" data-target="tms">TMS</button>
-  </div>
+            <div class="module-tabs">
+              <button class="module-tab active" data-target="literature">Literature Screening</button>
+              <button class="module-tab" data-target="icsr">ICSR Processing</button>
+            </div>
 
-  <div class="module-content">
-    <div class="module-panel active" id="dms">
-      <h4>Document Management System (DMS)</h4>
-      <p>
-        Organize, store, version, and control documentation with built-in approval flows.
-        Supports compliance, audit trails, and structured document lifecycles.
-      </p>
-      <button class="module-cta-btn" data-scroll-target="#form-section">
-    Reach out to us
-  </button>
-    </div>
+            <div class="module-content">
+              <div class="module-panel active" id="literature">
+                <h4>Intelligent Literature Surveillance</h4>
+                <p>
+                  AI-powered screening of PubMed, EMBASE, and local databases. Automated classification, deduplication, and prioritization of articles with full-text procurement support. Multi-lingual article translation for initial review.
+                </p>
+                <button class="module-cta-btn" data-scroll-target="#form-section">
+                  Schedule a Demo
+                </button>
+              </div>
 
-    <div class="module-panel" id="tms">
-      <h4>Training Management System (TMS)</h4>
-      <p>
-        Assign, track, and certify team training with automated reminders and compliance logs.
-        Designed for regulated teams needing complete training traceability.
-      </p>
-       <button class="module-cta-btn" data-scroll-target="#form-section">
-    Reach out to us
-  </button>
-    </div>
-  </div>
-</div>
+              <div class="module-panel" id="icsr">
+                <h4>Automated ICSR Case Processing</h4>
+                <p>
+                  Complete drug-event association with causality assessment. AI-generated case narratives with PV-specialized NLP. Seamless integration with your existing safety database for streamlined report submission.
+                </p>
+                <button class="module-cta-btn" data-scroll-target="#form-section">
+                  Schedule a Demo
+                </button>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" aria-labelledby="contact-heading">
       <div class="container">
         <div class="contact-inner">
           <div class="contact-details">
             <h2 id="contact-heading">Get in touch</h2>
-            <p style="text-decoration:none;">Email: <a href="mailto:reachus@arcolab.com">reachus@arcolab.com</a></p>
+            <p style="text-decoration:none;">Email: <a href="mailto:reachus@arcolab.com" style="color:#fff;">reachus@arcolab.com</a></p>
             <div class="muted" aria-label="Address"><strong>Address</strong></div>
             <p class="contact-details address-line">19/2, Sarakki Village,</p>
             <p class="contact-details address-line">15th Cross Rd, Dollars Layout,</p>
@@ -586,20 +510,18 @@
           </div>
 
           <div>
-            <button class="btn" id="reach-btn" aria-controls="form-section" title="Go to form">Reach out to us</button>
+            <button class="btn" id="reach-btn" aria-controls="form-section" title="Go to form">Schedule a Demo</button>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>© <span id="year"></span> NoteIQ — All rights reserved.</footer>
+    <footer>© <span id="year"></span> NovaVigil by Arcolab — All rights reserved.</footer>
   </main>
 
   <script>
-    // dynamic year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // reach button scroll + focus
     document.getElementById('reach-btn').addEventListener('click', function (e){
       e.preventDefault();
       const target = document.getElementById('form-section');
@@ -611,7 +533,6 @@
       }, 600);
     });
 
-    // form emphasis animation
     (function pulseForm(){
       const fw = document.querySelector('.form-wrap');
       if(!fw) return;
@@ -622,116 +543,37 @@
       ], { duration: 1600, iterations: 1, easing: 'ease-in-out' });
     })();
 
-    // Accessible tab switching (single, consolidated handler)
     document.querySelectorAll('.module-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.module-tab').forEach(t =>
+          t.classList.remove('active')
+        );
+        tab.classList.add('active');
 
-    document.querySelectorAll('.module-tab').forEach(t =>
-      t.classList.remove('active')
-    );
-    tab.classList.add('active');
+        const target = tab.getAttribute('data-target');
 
-    const target = tab.getAttribute('data-target');
-
-    document.querySelectorAll('.module-panel').forEach(p =>
-      p.classList.remove('active')
-    );
-    document.getElementById(target).classList.add('active');
-  });
-});
+        document.querySelectorAll('.module-panel').forEach(p =>
+          p.classList.remove('active')
+        );
+        document.getElementById(target).classList.add('active');
+      });
+    });
 
     document.querySelectorAll('.module-cta-btn').forEach(btn => {
-  btn.addEventListener('click', function(){
-    const targetSel = btn.getAttribute('data-scroll-target');
-    const target = document.querySelector(targetSel);
-    if (!target) return;
+      btn.addEventListener('click', function(){
+        const targetSel = btn.getAttribute('data-scroll-target');
+        const target = document.querySelector(targetSel);
+        if (!target) return;
 
-    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-    // auto-focus first form element after scroll
-    setTimeout(() => {
-      const firstInput = target.querySelector('input, textarea, select, button, [tabindex]');
-      if (firstInput) firstInput.focus({ preventScroll:true });
-    }, 600);
-  });
-});
-
-
-
-    // Glimpse modal logic (kept intact)
-    (function(){
-      const modal = document.getElementById('glimpse-modal');
-      const modalImg = document.getElementById('glimpse-modal-img');
-      const modalCaption = document.getElementById('glimpse-modal-caption');
-      const closeBtn = document.querySelector('.glimpse-modal-close');
-      let lastFocused = null;
-
-      document.querySelectorAll('.glimpse-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.preventDefault();
-          const src = btn.getAttribute('data-src');
-          const caption = btn.getAttribute('data-caption') || '';
-          const alt = btn.querySelector('img')?.alt || '';
-
-          lastFocused = btn;
-
-          modalImg.src = src;
-          modalImg.alt = alt;
-          modalCaption.textContent = caption;
-
-          modal.setAttribute('aria-hidden', 'false');
-          closeBtn.focus();
-
-          document.documentElement.style.overflow = 'hidden';
-          document.body.style.overflow = 'hidden';
-        });
+        setTimeout(() => {
+          const firstInput = target.querySelector('input, textarea, select, button, [tabindex]');
+          if (firstInput) firstInput.focus({ preventScroll:true });
+        }, 600);
       });
-
-      function closeModal(){
-        modal.setAttribute('aria-hidden', 'true');
-        modalImg.src = '';
-        modalCaption.textContent = '';
-        document.documentElement.style.overflow = '';
-        document.body.style.overflow = '';
-        if(lastFocused) lastFocused.focus();
-      }
-
-      document.querySelectorAll('[data-close="true"]').forEach(el => el.addEventListener('click', closeModal));
-      if (closeBtn) closeBtn.addEventListener('click', closeModal);
-
-      document.addEventListener('keydown', function (e){
-        if (e.key === 'Escape' && modal && modal.getAttribute('aria-hidden') === 'false') closeModal();
-      });
-
-      if (modal) {
-        modal.addEventListener('click', function(e){
-          if (e.target === modal) closeModal();
-        });
-
-        document.addEventListener('focus', function(e){
-          if (modal.getAttribute('aria-hidden') === 'false'){
-            const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
-            if (focusable.length && !modal.contains(e.target)){
-              e.stopPropagation();
-              focusable[0].focus();
-            }
-          }
-        }, true);
-      }
-    })();
+    });
   </script>
-
-  <!-- Modal DOM (kept as-is) -->
-  <div id="glimpse-modal" class="glimpse-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="glimpse-modal-caption">
-    <div class="glimpse-modal-backdrop" data-close="true"></div>
-    <div class="glimpse-modal-panel" role="document">
-      <button class="glimpse-modal-close" aria-label="Close enlarged image">&times;</button>
-      <div class="glimpse-modal-content">
-        <img id="glimpse-modal-img" src="" alt="" />
-        <p id="glimpse-modal-caption" class="glimpse-modal-caption"></p>
-      </div>
-    </div>
-  </div>
 
 </body>
 </html>
